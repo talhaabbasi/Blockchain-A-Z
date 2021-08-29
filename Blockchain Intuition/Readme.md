@@ -25,7 +25,8 @@
 
       - Doesn't have a Previous hash
 
-      ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled.png)
+      ![Untitled](https://user-images.githubusercontent.com/28659121/131256804-cc02a5ae-1b89-4253-a7ed-6fb66f1fb816.png)
+
 
     - If anyone messes with any block, the Hash would change and it wouldn't match the previous hash in the next block
 
@@ -58,7 +59,8 @@
     - The blockchains are constantly checking their peers if they match up
     - There is a consensus protocol amongst all the machines that are connected which makes the blockchain very secure
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%201.png)
+    ![Untitled 1](https://user-images.githubusercontent.com/28659121/131256812-4a68775b-246f-4140-86d0-51f719edec9d.png)
+
 
   - How mining works? (The Nonce)
 
@@ -68,7 +70,8 @@
 
   - How mining works? (The cryptographic puzzle):
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%202.png)
+    ![Untitled 2](https://user-images.githubusercontent.com/28659121/131256821-bd907a48-741f-4e52-a551-a721bafa5cff.png)
+
 
     - Any hash above the target doesn't count
     - The only reason for it is to create a hurdle for the miners
@@ -99,20 +102,24 @@
 
   - Consensus Protocol (Competing Chains)
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%203.png)
+    ![Untitled 3](https://user-images.githubusercontent.com/28659121/131256831-e1228244-e9ff-491a-9ab8-65cb30594785.png)
+
 
     - In blockchain, both the chains wait (yellow and purple) for another block to be added. Whoever is able to add a new block has a longer chain and gets to keep the previous chain
     - Yellow blockchain is able to compute a new block
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%204.png)
+    ![Untitled 4](https://user-images.githubusercontent.com/28659121/131256836-8e99c3ab-57c3-42e5-bba6-672590c9956a.png)
+
 
     Yellow blockchain adds it's computed block to the rest of it's group
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%205.png)
+    ![Untitled 5](https://user-images.githubusercontent.com/28659121/131256841-ba183fe7-fb2b-40f9-899d-a0ae31a78437.png)
+
 
     - Purple block gets eliminated
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%206.png)
+    ![Untitled 6](https://user-images.githubusercontent.com/28659121/131256843-a18a283e-6d38-4c1a-9071-1c03d2d416ad.png)
+
 
   - Blockchain Demo
     - Computing a Hash - [https://tools.superdatascience.com/blockchain/hash](https://tools.superdatascience.com/blockchain/hash)
