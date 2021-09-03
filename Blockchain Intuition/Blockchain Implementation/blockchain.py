@@ -20,7 +20,7 @@ class Blockchain:
         return block
 
     def get_previous_block(self):
-        return self.chain(-1)
+        return self.chain[-1]
 
     def proof_of_work(self, previous_proof):
         new_proof = 1
@@ -79,3 +79,6 @@ def mine_block():
 def get_chain():
     response = {'chain': blockchain.chain, 'length': len(blockchain.chain)}
     return jsonify(response), 200
+
+
+app.run(host='0.0.0.0', port=5000)
