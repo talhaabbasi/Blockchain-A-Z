@@ -52,4 +52,4 @@ Inspiration, code snippets, etc.
 * [Blockchain A-Z™: Learn How To Build Your First Blockchain](https://www.udemy.com/course/build-your-blockchain-az/)
 * [Hadelin de Ponteves](https://www.udemy.com/user/hadelin-de-ponteves/)
 * [Kirill Eremenko](https://www.udemy.com/user/kirilleremenko/)
-* [Ligency Team] (https://www.udemy.com/user/ligency-team/)
+* [Ligency Team](https://www.udemy.com/user/ligency-team/)
