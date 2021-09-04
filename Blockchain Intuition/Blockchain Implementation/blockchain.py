@@ -2,6 +2,8 @@ from datetime import datetime
 import hashlib
 import json
 from flask import Flask, jsonify
+from werkzeug.utils import send_from_directory
+from flask_swagger_ui import get_swaggerui_blueprint
 
 
 class Blockchain:
@@ -78,6 +80,23 @@ def mine_block():
 def get_chain():
     response = {'chain': blockchain.chain, 'length': len(blockchain.chain)}
     return jsonify(response), 200
+
+
+@app.route('/static/<path:path>')
+def send_static(path):
+    return send_from_directory('static', path)
+
+
+SWAGGER_URL = '/swagger'
+API_URL = '/static/swagger.json'
+SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "Blockchain Implementation"
+    }
+)
+app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
 
 
 app.run(host='0.0.0.0', port=5000)
