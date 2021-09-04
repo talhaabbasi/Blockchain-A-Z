@@ -81,6 +81,21 @@ The REST API to the blockchain is described below.
 }
 ```
 
+## Check if the blockchain is valid
+
+### Request
+
+`GET /get_chain/`
+
+    curl -X GET "http://127.0.0.1:5000/is_valid" -H  "accept: */*"
+
+### Response
+```
+{
+  "message": "The blockchain is valid!"
+}
+```
+
 
 ## Authors
 
