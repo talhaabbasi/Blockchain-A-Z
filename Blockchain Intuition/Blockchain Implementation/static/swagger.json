@@ -52,7 +52,7 @@
 		  "tags": [
 			"Check if the blockchain is valid"
 		  ],
-		  "summary": "Check if the blockchain is valid or has been tampered",
+		  "summary": "Returns the validity of the blockchain if it is valid or has been tampered with",
 		  "responses": {
 			"200": {
 			  "description": "OK"
