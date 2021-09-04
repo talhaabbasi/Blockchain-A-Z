@@ -46,6 +46,19 @@
 			}
 		  }
 		}
+	  },
+	  "/is_valid": {
+		"get": {
+		  "tags": [
+			"Check if the blockchain is valid"
+		  ],
+		  "summary": "Check if the blockchain is valid or has been tampered",
+		  "responses": {
+			"200": {
+			  "description": "OK"
+			}
+		  }
+		}
 	  }
 	}
   }

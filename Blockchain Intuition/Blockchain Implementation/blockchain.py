@@ -82,6 +82,17 @@ def get_chain():
     return jsonify(response), 200
 
 
+@app.route('/is_valid', methods=['GET'])
+def is_valid():
+    chain = blockchain.chain
+    is_valid = blockchain.is_chain_valid(chain)
+    if is_valid:
+        response = {'message': "The blockchain is valid!"}
+    else:
+        response = {'message': "The blockchain is not valid!"}
+    return jsonify(response), 200
+
+
 @app.route('/static/<path:path>')
 def send_static(path):
     return send_from_directory('static', path)
