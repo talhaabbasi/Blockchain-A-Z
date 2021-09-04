@@ -35,6 +35,52 @@ export FLASK_APP=blockchain.py
 flask run
 ```
 
+# REST API
+
+The REST API to the blockchain is described below.
+
+## Mine a new block
+
+### Request
+
+`GET /mine_block/`
+
+    curl -X GET "http://127.0.0.1:5000/mine_block" -H  "accept: */*"
+
+### Response
+```
+{
+  "index": 2,
+  "message": "Congratulations, you just mined a block!",
+  "previous_hash": "67fd325e2c77f3d3f82f88e301886bfdf5ca4ef779b4e8d3dba09edf3ce250a3",
+  "proof": 533,
+  "timestamp": "2021-09-05 00:42:43.504125"
+}
+```
+
+## Get current blockchain
+
+### Request
+
+`GET /get_chain/`
+
+    curl -X GET "http://127.0.0.1:5000/get_chain" -H  "accept: */*"
+
+### Response
+```
+{
+  "chain": [
+    {
+      "index": 1,
+      "previous_hash": "0",
+      "proof": 1,
+      "timestamp": "2021-09-05 00:37:03.018917"
+    }
+  ],
+  "length": 1
+}
+```
+
 
 ## Authors
 
