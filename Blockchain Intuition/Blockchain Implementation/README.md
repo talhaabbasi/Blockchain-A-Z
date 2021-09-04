@@ -85,7 +85,7 @@ The REST API to the blockchain is described below.
 
 ### Request
 
-`GET /get_chain/`
+`GET /is_valid/`
 
     curl -X GET "http://127.0.0.1:5000/is_valid" -H  "accept: */*"
 
