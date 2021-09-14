@@ -54,7 +54,8 @@
     - Understanding Mining Difficulty
         - Current Target = 18 leading zeros
 
-        ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%207.png)
+        ![Untitled 7](https://user-images.githubusercontent.com/28659121/132994437-54692a91-0dda-4da2-bef5-87e3d178e65e.png)
+
 
         - How is Mining difficulty calculated?
             - Difficulty = current target / max target
@@ -82,7 +83,8 @@
         - The miners pick up the transaction with the highest fee
         - If the miners are go through all the Nonce values in less than a second (time to update the block) and are still not able to get a valid hash, they change the data inside it i.e. they change the transactions that they have choosen
 
-        ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%208.png)
+        ![Untitled 8](https://user-images.githubusercontent.com/28659121/132994465-10dc3d91-8d36-45ff-a92a-e880f372e425.png)
+
 
         - If you specify very low transaction fee it would likely be stuck in the 'Mem-Pool' as no miner would be using it to create a block.
         - Your transaction would be reverted back to you without it being included within 72 hours
@@ -122,7 +124,7 @@
         - All the transactions mined in the losing chain are rolled back, increases the chances of double spending
         - E.g. You buying a car from BTC. If your transaction ends up in a block in the initial(losing) chain and you get it mined (placed) in a block, you will get the confirmation of the trade (get the delivery of the vehicle) even though the transaction would be rolled back.
 
-        [https://www.youtube.com/watch?v=7etOh0YYqcc&ab_channel=BizVlogs](https://www.youtube.com/watch?v=7etOh0YYqcc&ab_channel=BizVlogs)
+        [Double Spending Problem](https://www.youtube.com/watch?v=7etOh0YYqcc&ab_channel=BizVlogs)
 
     - Extra: Bits to Target conversion
         - There is Bit field in the description of each block which stores the number in Decimal e.g. 392009692
