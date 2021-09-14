@@ -1,4 +1,4 @@
-- Cryptocurrency Intuition
+## Cryptocurrency Intuition
     - What will we learn:
         - [What is Bitcoin?]()
         - [Bitcoin's Monetary Policy]()
@@ -134,4 +134,3 @@
         - 0000000000000000000000000000000000000000000000 → Difficulty
         - 5D97DC0000000000000000000000000000000000000000
         - 0000000000000000005D97DC0000000000000000000000000000000000000000
--
