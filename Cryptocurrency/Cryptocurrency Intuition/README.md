@@ -1,4 +1,4 @@
-## Cryptocurrency Intuition
+- Cryptocurrency Intuition
     - What will we learn:
         - [What is Bitcoin?]()
         - [Bitcoin's Monetary Policy]()
