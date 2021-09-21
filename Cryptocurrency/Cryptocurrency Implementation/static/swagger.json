@@ -1,0 +1,64 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+	  "description": "Basic Blockchain implementation of the Udemy course Blockchain A-Z",
+	  "version": "1.0.0",
+	  "title": "Blockchain Implementation",
+	  "license": {
+		"name": "MIT",
+		"url": "https://opensource.org/licenses/MIT"
+	  }
+	},
+	"servers": [
+	  {
+		"url": "/"
+	  }
+	],
+	"tags": [
+	  {
+		"name": "Blockchain Implementation",
+		"description": "Example API for for mining, fetching and authenticating a blockchain"
+	  }
+	],
+	"paths": {
+	  "/mine_block": {
+		"get": {
+		  "tags": [
+			"Mine a block"
+		  ],
+		  "summary": "Returns mined block",
+		  "responses": {
+			"200": {
+			  "description": "OK"
+			}
+		  }
+		}
+	  },
+	  "/get_chain": {
+		"get": {
+		  "tags": [
+			"Get the complete blockchain"
+		  ],
+		  "summary": "Returns the current blockchain",
+		  "responses": {
+			"200": {
+			  "description": "OK"
+			}
+		  }
+		}
+	  },
+	  "/is_valid": {
+		"get": {
+		  "tags": [
+			"Check if the blockchain is valid"
+		  ],
+		  "summary": "Returns the validity of the blockchain if it is valid or has been tampered with",
+		  "responses": {
+			"200": {
+			  "description": "OK"
+			}
+		  }
+		}
+	  }
+	}
+  }
