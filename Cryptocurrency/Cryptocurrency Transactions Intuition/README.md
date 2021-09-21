@@ -14,25 +14,34 @@
     - All transactions sent to you are called UTXOs (Unspent Transaction Outputs)
     - In any cryptocurrency there is nothing like a Wallet. A central place where all your accumulated money is kept
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%209.png)
+    ![Untitled 9](https://user-images.githubusercontent.com/28659121/134113463-792927e6-5754-4b9e-aaba-779f52082e73.png)
+
+
 
     - There cannot be any unspent Bitcoin in your wallet. You need to spend it all e.g. in the above case, I sent 0.5 BTC to the bike shop and the remaining amount from 0.6 BTC back to myself
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2010.png)
+    ![Untitled 10](https://user-images.githubusercontent.com/28659121/134113562-1d558b2e-17aa-40ce-8305-2b5f79d5b909.png)
+
+
+
 
   - Where do transaction fees come from?
 
     - Anything you do not account for, becomes the transaction fee
     - Every transaction should have a fee in order for the transaction to be picked up by miners. If the transaction is not picked up within 72 hours, it is rolled back
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2011.png)
+    ![Untitled 11](https://user-images.githubusercontent.com/28659121/134113497-7557da47-bc79-45fe-ba01-f9ff0527b082.png)
+
+
 
   - How wallets work?
 
     - Blockchain does not have any balance or wallet, yet your trader provides you with one
     - The wallet calculates the total UTXOs that are available to you and calls it as the balance
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2012.png)
+    ![Untitled 12](https://user-images.githubusercontent.com/28659121/134113523-c6ab3b35-82ae-4432-8fc4-5d67fd5eef0f.png)
+
+
 
   - Signatures: Private and Public Keys
 
@@ -42,7 +51,9 @@
     - A private key can always generate a public key but a public key cannot never generate (determine) a private key
     - A verification function determines whether the message and signature is authentic or not
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2013.png)
+    ![Untitled 13](https://user-images.githubusercontent.com/28659121/134113536-b732258d-f8d4-44aa-a74c-1af1c19ab834.png)
+
+
 
   - What is a Segregated Witness? (SegWit)
 
@@ -56,7 +67,9 @@
     - We need people to be able to verify the authenticity of the transaction
     - Signature and Public Key end up taking 60% of the transaction
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2014.png)
+    ![Untitled 14](https://user-images.githubusercontent.com/28659121/134113427-b5666984-6931-4544-92b0-5a4fa5c7b16a.png)
+
+
 
     - The idea is to remove the Signature and Public Key and send it individually through Bitcoin's own messaging service, hence saving up some space
     - This allowed more transactions to be included as a single transaction now took less space
@@ -71,6 +84,8 @@
     - As your public key and a address are both present on the blockchain, people could easily pick it up and know how much money do you have
     - In BIP-32 update, a Master Private key was introduced. It helps generate another private key which is then used to sign data to create signatures
 
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2015.png)
+    ![Untitled 15](https://user-images.githubusercontent.com/28659121/134113601-6c798e07-071e-4201-b193-49b25015714d.png)
+
+
 
     - They also have a master public key, can be used to recreate any public key and addresses. It can be provided to some kind of auditor who does not need to need money
