@@ -1,9 +1,9 @@
 {
 	"openapi": "3.0.0",
 	"info": {
-	  "description": "Basic Blockchain implementation of the Udemy course Blockchain A-Z",
-	  "version": "1.0.0",
-	  "title": "Blockchain Implementation",
+	  "description": "Basic Cryptocurrency implementation of the Udemy course Blockchain A-Z",
+	  "version": "2.0.0",
+	  "title": "Cryptocurrency Implementation",
 	  "license": {
 		"name": "MIT",
 		"url": "https://opensource.org/licenses/MIT"

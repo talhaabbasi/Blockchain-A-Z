@@ -1,7 +1,10 @@
 from datetime import datetime
 import hashlib
 import json
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+import requests
+from uuid import uuid4
+from urllib.parse import urlparse
 from werkzeug.utils import send_from_directory
 from flask_swagger_ui import get_swaggerui_blueprint
 
@@ -104,7 +107,7 @@ SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
     SWAGGER_URL,
     API_URL,
     config={
-        'app_name': "Blockchain Implementation"
+        'app_name': "Cryptocurrency Implementation"
     }
 )
 app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
