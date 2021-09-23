@@ -162,6 +162,18 @@ def connect_node():
     return jsonify(response), 201
 
 
+@app.route('/replace_chain', methods=['GET'])
+def replace_chain():
+    is_chain_replaced = blockchain.replace_chain()
+    if is_chain_replaced:
+        response = {'message': "The node had different blocks so the chain was replaced by the longest one",
+                    'new_chain': blockchain.chain}
+    else:
+        response = {'message': "All good. The blockchain is the largest one!",
+                    'actual_chain': blockchain.chain}
+    return jsonify(response), 200
+
+
 @app.route('/static/<path:path>')
 def send_static(path):
     return send_from_directory('static', path)
