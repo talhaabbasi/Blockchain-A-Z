@@ -149,7 +149,7 @@ def add_transaction():
     return jsonify(response), 201
 
 
-@app.route('/connet_node', methods=['POST'])
+@app.route('/connect_node', methods=['POST'])
 def connect_node():
     json = request.get_json()
     nodes = json.get('nodes')

@@ -97,7 +97,7 @@ class Blockchain:
 
 app = Flask(__name__)
 
-# Creating an address for the node on the PORT 5000
+# Creating an address for the node on the PORT 5001
 node_adddress = str(uuid4()).replace('-', '')
 
 blockchain = Blockchain()
@@ -149,7 +149,7 @@ def add_transaction():
     return jsonify(response), 201
 
 
-@app.route('/connet_node', methods=['POST'])
+@app.route('/connect_node', methods=['POST'])
 def connect_node():
     json = request.get_json()
     nodes = json.get('nodes')
