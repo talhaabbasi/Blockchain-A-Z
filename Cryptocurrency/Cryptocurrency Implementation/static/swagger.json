@@ -34,6 +34,19 @@
 		  }
 		}
 	  },
+	  "/replace_chain": {
+		"get": {
+		  "tags": [
+			"Replace the chain"
+		  ],
+		  "summary": "Checks all the chains on corresponding nodes and replaces the chain with the longes chain",
+		  "responses": {
+			"200": {
+			  "description": "OK"
+			}
+		  }
+		}
+	  },
 	  "/get_chain": {
 		"get": {
 		  "tags": [
@@ -59,6 +72,112 @@
 			}
 		  }
 		}
+	  },
+	  "/add_transaction": {
+		"post": {
+		  "tags": [
+			"Add a transaction"
+		  ],
+		  "summary": "Add a transaction to the pool of transactions",
+		  "requestBody": {
+			"description": "Add Transaction Post Object",
+			"required": true,
+			"content": {
+			  "application/json": {
+				"schema": {
+				  "$ref": "#/components/schemas/AddTransactionPostBody"
+				}
+			  }
+			}
+		  },
+		  "produces": [
+			"application/json"
+		  ],
+		  "responses": {
+			"201": {
+			  "description": "OK",
+			  "schema": {
+				"$ref": "#/components/schemas/id"
+			  }
+			},
+			"400": {
+			  "description": "Failed. Bad post data."
+			}
+		  }
+		}
+	  },
+	  "/connect_node": {
+		"post": {
+		  "tags": [
+			"Add a Node"
+		  ],
+		  "summary": "Add a node to the pool of nodes. Each node knows it's corresponding nodes",
+		  "requestBody": {
+			"description": "Connect Node Post Object",
+			"required": true,
+			"content": {
+			  "application/json": {
+				"schema": {
+				  "$ref": "#/components/schemas/ConnectNodePostBody"
+				}
+			  }
+			}
+		  },
+		  "produces": [
+			"application/json"
+		  ],
+		  "responses": {
+			"201": {
+			  "description": "OK",
+			  "schema": {
+				"$ref": "#/components/schemas/id"
+			  }
+			},
+			"400": {
+			  "description": "Failed. Bad post data."
+			}
+		  }
+		}
 	  }
-	}
+	},
+	"components": {
+		"schemas": {
+		  "id": {
+			"properties": {
+			  "uuid": {
+				"type": "string"
+			  }
+			}
+		  },
+		  "AddTransactionPostBody": {
+			"type": "object",
+			"properties": {
+			  "sender": {
+				"type": "string",
+				"format": "Address of the sender"
+			  },
+			  "receiver": {
+				"type": "string",
+				"format": "Address of the receiver"
+			  },
+			  "amount": {
+				"type": "integer",
+				"format": 500
+			  }
+			}
+		  },
+		  "ConnectNodePostObject": {
+			"type": "object",
+			"properties": {
+			  "nodes": {
+				"type": "array",
+				"format": [
+					"http://127.0.0.1:5002",
+					"http://127.0.0.1:5003"
+				]
+			  }
+			}
+		  }
+		}
+	  }
   }
