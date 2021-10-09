@@ -1,4 +1,5 @@
 // Talhacoin ICO
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.4.17;
 
 contract talhacoin_ico {
