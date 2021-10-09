@@ -7,4 +7,11 @@ contract talhacoin_ico {
     uint256 public total_talhacoin_bought = 0;
     mapping(address => uint256) equity_talhacoin;
     mapping(address => uint256) equity_usd;
+
+    modifier can_buy_talhacoin(uint256 usd_invested) {
+        require(
+            usd_invested * usd_to_talhacoin + total_talhacoin_bought <=
+                max_talhacoin
+        );
+    }
 }
