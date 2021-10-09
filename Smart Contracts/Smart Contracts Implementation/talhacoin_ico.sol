@@ -28,4 +28,14 @@ contract talhacoin_ico {
     function equity_in_usd(address investor) external view returns (uint256) {
         return equity_usd[investor];
     }
+
+    function buy_talhacoins(address investor, uint32 usd_invested)
+        external
+        can_buy_talhacoin(usd_invested)
+    {
+        uint256 talhacoin_bought = usd_invested * usd_to_talhacoin;
+        equity_talhacoin[investor] += talhacoin_bought;
+        equity_usd[investor] += usd_invested;
+        total_talhacoin_bought += talhacoin_bought;
+    }
 }
