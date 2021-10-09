@@ -13,5 +13,18 @@ contract talhacoin_ico {
             usd_invested * usd_to_talhacoin + total_talhacoin_bought <=
                 max_talhacoin
         );
+        _;
+    }
+
+    function equity_in_talhacoin(address investor)
+        external
+        view
+        returns (uint256)
+    {
+        return equity_talhacoin[investor];
+    }
+
+    function equity_in_usd(address investor) external view returns (uint256) {
+        return equity_usd[investor];
     }
 }
