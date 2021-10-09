@@ -67,13 +67,13 @@
     - Bitcoin also experienced soft-fork when it added Segregated Witness (SegWit) to it's blockchain in July 2017
     - In August 2017 people who were not happy with this decision did a hard-fork of the blockchain and created Bitcoin Cash which had an increased block size of 8mb
     - In October 2017 when the use of GPUs was replaced with ASICs, people unhappy with this decision hard-forked the blockchain to create Bitcoin Gold
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2016.png)
+    ![Untitled 16](https://user-images.githubusercontent.com/28659121/136561986-e274bf66-be45-486b-8735-3b8075c69c04.png)
   - Soft and Hard Forks (Part2)
     - Hard Forks = Loosen Rules
     - Soft Forks = Tighten Rules
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2017.png)
+    ![Untitled 17](https://user-images.githubusercontent.com/28659121/136561966-0b57c7c7-9bb8-4429-a4c1-fe090f87e724.png)
     - Hard Forks are not backward compatible. As soon as something is found in the new chain, it won't be accepted by the miners in the old chain
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2018.png)
+    ![Untitled 18](https://user-images.githubusercontent.com/28659121/136561942-01aa2cde-4ac8-467f-a760-63d8cf690061.png)
     - In a Soft Fork, all miners will have to eventually upgrade to the latest chain
     - Miners who haven't upgraded are at an disadvantage as their blocks will not be accepted by the miners who have already upgraded. So they won't be able to contribute to the Blockchain
     - Soft Forks are backward compatible
@@ -85,7 +85,7 @@
     - In ICOs individuals do not get any ownership and shares in the profit of the company unlike IPOs
     - Individuals only get the tokens which they can spend and trade
     - The founders of the company keep all the control, their shares are not diluted/shares
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2019.png)
+    ![Untitled 19](https://user-images.githubusercontent.com/28659121/136561896-508b4327-f0e2-4d4b-adfc-bfab7e15d06d.png)
   - ICO Case Study
     - A way to crowd-fund a project
     - Tokens are not mined!
@@ -96,7 +96,7 @@
     - [PowerLedger](https://www.powerledger.io/): Once you have access electricity(from solar panels, windmills etc.) , you could sell it to your neighbors which would be cheaper compared to buying from the companies
     - [Provenance](https://www.provenance.org/whitepaper): Using blockchain to track products to their source
   - Blockchain and Web 3.0
-    ![Untitled](A-Z%20Blockchain%20bbc625f3dabd41cb8ac747b3b6f577b8/Untitled%2020.png)
+    ![Untitled 20](https://user-images.githubusercontent.com/28659121/136561823-f07ace0f-bced-405a-83fb-c0c552efe7b5.png)
     - Decentralized backend
     - In centralized backends, the company that controls privacy, censor etc.
     - In decentralized backends, smart contracts will govern how these applications work
